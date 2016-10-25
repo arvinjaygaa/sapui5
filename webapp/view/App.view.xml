@@ -1,0 +1,23 @@
+<!--<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.bootcamp.controller.App"-->
+	<!--xmlns:html="http://www.w3.org/1999/xhtml">-->
+<!--	<App>-->
+<!--		<pages>-->
+<!--			<Page title="Title">-->
+<!--				<content></content>-->
+<!--			</Page>-->
+<!--		</pages>-->
+<!--	</App>-->
+<mvc:View
+	controllerName="sap.ui.bootcamp.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Text text="User Name"/>
+	<Input id="username"
+		   value="{/field/username}"
+		   description="Hello {/field/username}"
+		   valueLiveUpdate="true"
+		   width="100%"/>
+	<Text text="Password"/>
+	<Input id="password"/>
+	<Button text="Login" press="onLoginPress"/>
+</mvc:View>
